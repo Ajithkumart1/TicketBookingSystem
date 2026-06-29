@@ -26,10 +26,10 @@ app.get('/api/health', (req, res) => {
 
 // Routes — we will add these one by one
  app.use('/api/auth', require('./src/routes/auth.routes'));
-// app.use('/api/wallet', require('./src/routes/wallet.routes'));
-// app.use('/api/events', require('./src/routes/event.routes'));
+ app.use('/api/wallet', require('./src/routes/wallet.routes'));
+ app.use('/api/events', require('./src/routes/event.routes'));
 // app.use('/api/bookings', require('./src/routes/booking.routes'));
-// app.use('/api/admin', require('./src/routes/admin.routes'));
+ app.use('/api/admin', require('./src/routes/admin.routes'));
 
 // Global error handler
 app.use((err, req, res, next) => {
