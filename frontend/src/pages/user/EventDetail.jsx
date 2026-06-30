@@ -109,7 +109,7 @@ export default function EventDetail() {
   const handleConfirm = async () => {
     setConfirming(true);
     try {
-      const res = await api.post('/bookings/confirm', {
+     await api.post('/bookings/confirm', {
         eventId: id,
         seatIds: selectedSeats,
         idempotencyKey: idempotencyKeyRef.current,
