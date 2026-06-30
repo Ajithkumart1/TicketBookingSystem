@@ -80,11 +80,19 @@ App opens on `http://localhost:3000`
 
 ## 📐 Architecture
 React Frontend (Vercel)
+
 │
-▼ REST API calls (JWT Bearer token)
+
+▼ 
+
+REST API calls (JWT Bearer token)
 Express Backend (Render)
+
 │
-▼ Mongoose ODM
+
+▼ 
+
+Mongoose ODM
 MongoDB Atlas
 
 ### Database Models
@@ -164,30 +172,55 @@ A Postman collection is included at `/postman/TicketBooking.postman_collection.j
 ## 📋 Full API Reference
 Auth
 POST   /api/auth/register
+
 POST   /api/auth/login
+
 POST   /api/auth/admin/login
+
 GET    /api/auth/me
+
 Wallet
+
 GET    /api/wallet/balance
+
 POST   /api/wallet/add
+
 GET    /api/wallet/transactions
+
 Events (Public)
+
 GET    /api/events
+
 GET    /api/events/:id
+
 Bookings
+
 POST   /api/bookings/reserve
+
 POST   /api/bookings/confirm
+
 GET    /api/bookings/my
+
 GET    /api/bookings/:id
+
 Admin
+
 GET    /api/admin/dashboard
+
 POST   /api/admin/events
+
 PUT    /api/admin/events/:id
+
 DELETE /api/admin/events/:id
+
 POST   /api/admin/events/:id/seats
+
 GET    /api/admin/events/:id/seats
+
 GET    /api/admin/bookings
+
 POST   /api/admin/bookings/:id/cancel
+
 GET    /api/admin/transactions
 
 ## 📜 License
